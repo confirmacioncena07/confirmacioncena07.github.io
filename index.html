@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Invitación a mi Cumpleaños</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <div class="burbujas">
+    <span></span><span></span><span></span><span></span><span></span>
+  </div>
+
+  <div class="container">
+    <h1>¡ Te invito a una cena por mi cumpleaños !</h1>
+    <p><strong>📅 Fecha:</strong> Sábado 07 de junio de 2025</p>
+    <p><strong>🕖 Hora:</strong> 6:30 PM</p>
+    <p><strong>📍 Lugar:</strong> Casa frente a terminal de buses Santa Ana - 1 Calle Pte.</p>
+    <p><strong>🧧Obsequio:</strong> Si quieren gracias, sino también</p>
+    <p>Si llegaste hasta acá, muchas gracias por querer compartir este momento conmigo! 🫶🏽🙌🏽</p>
+
+
+
+    <!-- Cuenta regresiva -->
+    <div id="cuenta-regresiva">
+      <h2>Falta:</h2>
+      <div class="reloj">
+        <span id="dias"></span>d :
+        <span id="horas"></span>h :
+        <span id="minutos"></span>m :
+        <span id="segundos"></span>s
+      </div>
+    </div>
+
+    <!-- Mapa -->
+    <div class="mapa">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d814.3898434033647!2d-89.74630887920533!3d13.844273507443457!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f62bf8c7a159b55%3A0x98030c32a5271404!2sTerminal%20de%20buses%20para%20Santa%20Ana!5e0!3m2!1ses-419!2ssv!4v1748665912012!5m2!1ses-419!2ssv" 
+      width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+
+    <!-- Formulario -->
+    <h2>Confirma tu asistencia</h2>
+    <form action="confirmar.php" method="POST">
+      <input type="text" name="nombre" placeholder="Tu nombre" required>
+      <input type="email" name="email" placeholder="Tu correo" required>
+      <button type="submit">Confirmar</button>
+    </form>
+
+    
+
+  <script src="script.js"></script>
+</body>
+</html>
